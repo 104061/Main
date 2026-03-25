@@ -313,6 +313,17 @@ footer{
     margin: 0;
 }
 
+footer a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+footer a:hover{
+    color: var(--accent);
+}
+
 /* Responsive */
 @media (max-width: 768px){
     header{
@@ -366,3 +377,5 @@ footer{
         font-size: 2rem;
     }
 }
+
+
