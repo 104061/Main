@@ -195,12 +195,13 @@ header{
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
+    border: 0px solid transparent;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    transition: 0.2s ease-in-out;
 }
 
 .tips-list li:hover{
-    transform: translateX(10px);
+    border: 2px solid var(--accent);
 }
 
 .tip-number{
