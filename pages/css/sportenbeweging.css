@@ -1,0 +1,154 @@
+html{
+width: 100%;
+height: 100%;
+}
+    
+body{
+display: flex;
+flex-direction: column;
+font-family: Arial;
+margin: 0;
+padding: 0;
+background-image: url(../media/aboutusbg.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+width: 100%;
+}
+ 
+header{
+background-color: black;
+width: 100%;
+height: 6vh;
+display: flex;
+align-items: center;
+justify-content: space-between
+}
+    
+.holder{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 70%;
+gap: 5%;
+}
+
+.homepage-logo{
+width: 85px;
+height: 75px;
+}
+
+.navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+font-size: 20px;
+margin-right: 25px;
+}
+    
+.navbar a{
+color: white;
+text-decoration: none;
+transition: 0.6s ease;
+}
+    
+.navbar a:hover{
+color: rgb(42, 172, 42);
+}
+
+.title{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+font-size: 40px;
+font-weight: bold;
+height: fit-content;
+width: fit-content;
+}
+
+.quiz{
+height: fit-content;
+top: 300px;
+left: 925px;
+font-size: 25px;
+background-color: black;
+padding-right: 130px;
+padding-bottom: 100px;
+padding-left: 130px;
+border-radius: 15px;
+}
+
+.quiz #vraag{
+text-align: center;
+color: white;
+}
+
+.antwoorden {
+display: flex;
+flex-direction: column; 
+align-items: center;
+gap: 10px;
+margin-top: 10px;
+}
+
+.antwoorden button {
+display: block; 
+width: 400px; 
+padding: 8px 16px;
+font-size: 25px;
+border-radius: 20px;
+border: none;
+justify-content: center;
+transition: 0.3s ease;
+}
+
+.antwoorden button:hover{
+cursor: pointer;
+transform: scale(1.1);
+}
+
+#next{
+height: fit-content;
+width: fit-content;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+#next:hover{
+transform: scale(1.1);
+}
+
+#next{
+font-size: 25px;
+padding: 10px;
+border-radius: 10px;
+border: none;
+}
+
+#eindscherm{
+background-color: black;
+color: white;
+padding: 40px;
+border-radius: 20px;
+}
+
+#eindscherm h2{
+font-size: 40px;
+}
+
+.openVragen{
+background-color: rgb(40, 169, 40);
+color: black;
+text-decoration: none;
+font-weight: bold;
+padding: 10px;
+border-radius: 30px;
+}
+
+.openVragen:hover{
+background-color: rgb(40, 169, 70);
+}

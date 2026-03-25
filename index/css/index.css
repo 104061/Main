@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(110, 192, 87);
+    margin: 0;
+}
+
+#header {
+    height: 6vh;
+    margin: 0;
+    width: 100vw;
+
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 0;
+    border: 5px solid black;
+    border-radius: 2px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin: 0;
+    width: 4.5vw;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#contents {
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+#contents button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contents button:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+#hero {
+    height: 25vw;
+    margin: 0;
+    width: 100vw;
+    top: -90px;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid;
+    border-radius: 2px;
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0;
+    width: 30%;
+}
+
+#holder {
+    margin: 0;
+    width: 20vw;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.quizholder{
+    position: relative;
+    width: 100%;
+    display: flex;
+
+}
+
+#Quiz {
+    left: 10vw;
+    width: 30vh;
+    position: relative;
+    font-size: 20px;
+
+}
+
+#Quiz button{
+    font-size: 20px;
+}
+
+#QuizSelection{
+    display: flex;
+    justify-content: space-between;
+}
+
+#QuizImage1 img {
+    margin: 0;
+    width: 20vw;
+    height: auto;
+    flex-shrink: 0;
+}

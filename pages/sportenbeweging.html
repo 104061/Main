@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport & Beweging Quiz</title>
+    <link rel="stylesheet" href="css/sportenbeweging.css">
+</head>
+<body>
+
+<header>
+    <a href="../index.html"><img src="media/homepage logo.png" class="homepage-logo"></a>
+
+
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="Quizen.html">Quizzen</a>
+        <a href="Contact.html">Contact</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="informatie.html">Informatie</a>
+    </div>
+</header>
+
+
+<div class="holder">
+    <div class="title">SPORT & BEWEGING</div>
+
+    <div class="quiz">
+        <p id="vraag"></p>
+
+        <div class="antwoorden">
+            <button id="antwoord1" onclick="checkAntwoord(0)">Antwoord 1</button>
+            <button id="antwoord2" onclick="checkAntwoord(1)">Antwoord 2</button>
+            <button id="antwoord3" onclick="checkAntwoord(2)">Antwoord 3</button>
+            <button id="antwoord4" onclick="checkAntwoord(3)">Antwoord 4</button>
+        </div>
+    </div>
+
+    <button id="next" onclick="volgendeVraag()">Volgende vraag</button>
+
+    <div id="eindscherm" style="display:none;">
+        <h2>Quiz klaar!</h2>
+        <p id="scoreTekst"></p>
+        <a href="#" class="openVragen">Ga naar open vragen</a>
+    </div>
+</div>
+
+
+<script src="javascript/sportenbeweging.js"></script>
+</body>
+</html>

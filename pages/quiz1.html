@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> voeding & dietetiek</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="javascript/quiz.js" defer></script>
+</head>
+  <body>
+    <div id="header">
+        <img id="logo" src="media/homepage logo.png">
+        <div id="contents">
+            <button type="button" onclick="window.location.href='../index.html'">Home</button>
+            <button type="button" onclick="window.location.href='Quizen.html'">Quizzen</button>
+            <button type="button" onclick="window.location.href='aboutus.html'">About Us</button>
+            <button type="button" onclick="window.location.href='Contact.html'">Contact</button>
+        </div>
+    </div>
+    <div class="holder">
+        <div class="title">VOEDING & DIETETIEK</div>
+     
+        <div class="quiz">
+            <p id="vraag"></p>
+     
+            <div class="antwoorden">
+                <button id="antwoord1" onclick="checkAntwoord(0)">Antwoord 1</button>
+                <button id="antwoord2" onclick="checkAntwoord(1)">Antwoord 2</button>
+                <button id="antwoord3" onclick="checkAntwoord(2)">Antwoord 3</button>
+                <button id="antwoord4" onclick="checkAntwoord(3)">Antwoord 4</button>
+            </div>
+        </div>
+     
+        <button id="next" onclick="volgendeVraag()">Volgende vraag</button>
+    </div>
+   </body>
+</html>
