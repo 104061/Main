@@ -1,11 +1,11 @@
 const vragen = [
     {
         vraag: "Hoeveel stappen moet je minimaal per dag zetten als volwassen??",
-        antwoorden: ["15.000", "5.000", "10.000", "20.000"],
+        antwoorden: ["10.000", "5.000", "15.000", "20.000"],
         correct: 0
     },
     {
-        vraag: "Hoeveel minuten moet je ongeveer nemen tussen je sets in?",
+        vraag: "Hoeveel minuten moet je ongeveer rust nemen tussen je sets in?",
         antwoorden: ["1-2 min", "3-4 min", "2-3 min", "90 sec"],
         correct: 2
     },
@@ -37,7 +37,7 @@ const vragen = [
     {
         vraag: "Hoe krijg je blessures?",
         antwoorden: ["Te zware gewichten", "Niet tot falen trainen", "Geen warming-up", "Slechte vorm"],
-        correct: 3
+        correct: [2, 3]
     },
     {
         vraag: "Hoeveel sets en reps is goed voor snelle spiergroei?",
