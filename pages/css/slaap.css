@@ -1,0 +1,105 @@
+:root{
+    --black: #000000;
+    --green: #44e105;
+    --red: #f90000;
+    --seegray: #897f7faa;
+    --gray: #fff;
+}
+
+html{
+    width: 100%;
+    height: 200%;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/* begin bodycontent */
+
+header{
+    width: 100%;
+    height: 5%;
+    background: var(--red);
+}
+
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    background: url(../media/pexels-souvenirpixels-417074.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.hero-wrapper{
+    background: var(--seegray);
+    width: 90%;
+    height: 90%;
+    margin-top: 3%;
+    
+}
+
+.hero-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.hero-above{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    gap: 30%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title{
+    width: 70%;
+    height: 15%;
+    background: var(--green);
+}
+
+.hero-img{
+    width: 90%;
+    height: 25%;
+    background: url(../media/pexels-jaime-reimer-1376930-2662116.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* einde bodycontent */
+
+
+
+footer{
+    width: 100%;
+    height: 5%;
+    margin: 0;
+    
+}
