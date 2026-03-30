@@ -1,74 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Gemeente Otterdam | Leefstijl & Gezondheid</title>
     <link rel="stylesheet" href="index/css/index.css">
     <script src="index/javascript/index.js" defer></script>
 </head>
 
 <body>
-    <div id="header">
-        <img id="logo" src="index/media/homepage logo.svg">
-        <div id="contents">
-            <button type="button" onclick="window.location.href='index.html'">Home</button>
-            <button type="button" onclick="window.location.href='pages/Quizen.html'">Quizzen</button>
-            <button type="button" onclick="window.location.href='pages/aboutus.html'">About Us</button>
-            <button type="button" onclick="window.location.href='pages/Contact.html'">Contact</button>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h2>Gemeente Otterdam</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="#quizzen">Quizzen</a>
+                <a href="pages/aboutus.html">Over Ons</a>
+                <a href="pages/Contact.html">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </div>
-    <div id="hero">
-        <div id="info">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae debitis, vel eligendi velit voluptatum eos laudantium vel eligendi velit voluptatum eos laudantium vel eligendi velit voluptatum eos laudantium  <br>
-                aspernatur earum, vitae id  laudantium culpa fugiat ipsam fugit numquam <br>
-                <br>
-                <br>
-                facilis voluptate deserunt optio, natus laboriosam saepe magnam. Dolor illum eum nobis enim <br>
-                similique rerum inventore libero ipsam dignissimos quo praesentium ex ad <br>
-            </p> 
+    </header>
 
-            <div id="herp_image">
-                <img id="holder" src="index/media/1.webp">
-            </div>
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('pages/media/calmbck.jpg')"></div>
+            <div class="slide" style="background-image: url('pages/media/calmwomen.jpg')"></div>
+            <div class="slide" style="background-image: url('pages/media/pexels-souvenirpixels-417074.jpg')"></div>
+            <div class="slide" style="background-image: url('pages/media/snowytree.jpg')"></div>
         </div>
-        <div class="quizholder">
-            <div id="Quiz">
-                <button onclick="RandomQuiz()">Start een Quiz</button>
-            </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Leefstijl & Gezondheid</h1>
+            <p>Ontdek hoe je een gezondere levensstijl kunt bereiken. Test je kennis met onze interactieve quizzen over beweging, voeding en rust.</p>
+            <a href="#quizzen" class="hero-btn">Bekijk de Quizzen</a>
         </div>
+        <div class="slide-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+        </div>
+    </section>
 
-    </div>
-    <div id="QuizSelection">
-        <div id="Quiz_Select1">
-            <div id="QuizImage1">
-                <img src="index/media/1.webp">
-            </div>
-
-            <div id="Quiz1">
-                <a href="pages/informatie.html">Sport & beweging</a>
-            </div>
-        </div>
-        <div id="Quiz_Select2">
-            <div id="QuizImage1">
-                <img src="index/media/1.webp">
-            </div>
-
-            <div id="Quiz2">
-                <a href="pages/quiz1.html">Voeding & Dietetiek</a>
-            </div>
-        </div>
-        <div id="Quiz_Select3">
-            <div id="QuizImage1">
-                <img src="index/media/1.webp">
-            </div>
-
-            <div id="Quiz3">
-                <a href="pages/slaap_info.html">Slaap & Rust</a>
+    <section class="intro-section">
+        <div class="intro-container">
+            <h2>Welkom bij het Gezondheidsplatform</h2>
+            <p>De gemeente Otterdam zet zich in voor de gezondheid van haar inwoners. Op dit platform vind je informatie en quizzen over drie belangrijke pijlers van een gezonde leefstijl. Leer meer over hoe je jouw welzijn kunt verbeteren!</p>
+            <div class="intro-stats">
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Thema's</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Quizvragen</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Gratis</span>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="quizzen-section" id="quizzen">
+        <div class="quizzen-container">
+            <h2>Kies een Thema</h2>
+            <p class="section-subtitle">Elke quiz helpt je meer te leren over een belangrijk aspect van je gezondheid</p>
+
+            <div class="quiz-cards">
+                <div class="quiz-card sport-card">
+                    <div class="card-image">
+                        <img src="pages/media/calmwomen.jpg" alt="Sport en Beweging">
+                        <div class="card-overlay sport-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon sport-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"/>
+                            </svg>
+                        </div>
+                        <h3>Sport & Beweging</h3>
+                        <p>Ontdek het belang van regelmatige beweging en hoe je fit kunt blijven.</p>
+                        <a href="pages/informatie.html" class="card-btn sport-btn">Start Quiz</a>
+                    </div>
+                </div>
+
+                <div class="quiz-card voeding-card">
+                    <div class="card-image">
+                        <img src="pages/media/waterflower.jpg" alt="Voeding en Dietetiek">
+                        <div class="card-overlay voeding-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon voeding-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.46L23 5.05l-5 2V1h-2v8l-5-2 1.66 16.48c.1.82.79 1.46 1.63 1.46h1.66l.67-6.64L18.06 23zM1 22h4V15H3v5H1v2zm8-7h-2v7h4v-2h-2v-5zm5-1c-1.1 0-2 .9-2 2v6h2v-6h2v6h2v-6c0-1.1-.9-2-2-2h-2z"/>
+                            </svg>
+                        </div>
+                        <h3>Voeding & Dietetiek</h3>
+                        <p>Leer over gezonde voeding en hoe je lichaam de juiste brandstof krijgt.</p>
+                        <a href="pages/quiz1.html" class="card-btn voeding-btn">Start Quiz</a>
+                    </div>
+                </div>
+
+                <div class="quiz-card slaap-card">
+                    <div class="card-image">
+                        <img src="pages/media/pexels-souvenirpixels-417074.jpg" alt="Slaap en Rust">
+                        <div class="card-overlay slaap-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-icon slaap-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.06 7 9.54 0 4.48-2.94 8.27-7 9.54.95.3 1.95.46 3 .46 5.52 0 10-4.48 10-10S14.52 2 9 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Slaap & Rust</h3>
+                        <p>Begrijp waarom goede slaap essentieel is voor je gezondheid en welzijn.</p>
+                        <a href="pages/slaap_info.html" class="card-btn slaap-btn">Start Quiz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>Klaar om te beginnen?</h2>
+            <p>Kies een willekeurige quiz en test direct je kennis!</p>
+            <button class="cta-btn" onclick="RandomQuiz()">Start een Willekeurige Quiz</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Gemeente Otterdam</h3>
+                <p>Samen werken aan een gezondere gemeenschap</p>
+            </div>
+            <div class="footer-links">
+                <a href="pages/aboutus.html">Over Ons</a>
+                <a href="pages/Contact.html">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                <p>2026 Gemeente Otterdam - Leefstijl & Gezondheid</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
