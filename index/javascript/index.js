@@ -114,7 +114,7 @@ function initSlideshow() {
 
 // Quiz pagina's voor random selectie
 const quizPaginas = [
-    'pages/informatie.html',
+    'pages/sportenbeweging_info.html',
     'pages/quiz1.html',
     'pages/slaap_info.html'
 ];
