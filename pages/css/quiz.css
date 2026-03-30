@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+#nathan{
+    border-radius: 50%;
+}
+
 #header {
     height: 6vh;
     margin: 0;

@@ -1,11 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz | Slaap en rust</title>
+    <link rel="stylesheet" href="css/slaap.css">
+    <link rel="stylesheet" href="css/slaap_quiz.css">
 </head>
 <body>
-    
+    <header id="header">
+        <div class="logo">
+            <h2>Gemeente Otterdam</h2>
+        </div>
+        <nav class="head-buttons">
+            <a href="../index.html">Home</a>
+            <a href="slaap_info.html">Slaap & Rust</a>
+        </nav>
+    </header>
+
+    <!-- begin main content -->
+
+    <section class="quiz-hero">
+        <div class="quiz-hero-content">
+            <h1>Slaap Quiz</h1>
+            <p>Test je kennis over slaap en rust!</p>
+        </div>
+    </section>
+
+    <section class="quiz-section">
+        <div class="quiz-container">
+            <div class="quiz-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <span class="progress-text" id="progress-text">Vraag 1 van 10</span>
+            </div>
+
+            <div class="quiz-content" id="quiz-content">
+                <!-- Vraag 1 -->
+                <div class="question-card active" data-question="1">
+                    <h2 class="question-number">Vraag 1</h2>
+                    <p class="question-text">Hoeveel uur slaap heeft een volwassene gemiddeld per nacht nodig?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">4-5 uur</button>
+                        <button class="answer-btn" data-correct="false">5-6 uur</button>
+                        <button class="answer-btn" data-correct="true">7-9 uur</button>
+                        <button class="answer-btn" data-correct="false">10-12 uur</button>
+                    </div>
+                    <div class="feedback" id="feedback-1"></div>
+                </div>
+
+                <!-- Vraag 2 -->
+                <div class="question-card" data-question="2">
+                    <h2 class="question-number">Vraag 2</h2>
+                    <p class="question-text">Wat is de ideale temperatuur voor je slaapkamer?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">10-12°C</button>
+                        <button class="answer-btn" data-correct="true">16-18°C</button>
+                        <button class="answer-btn" data-correct="false">20-22°C</button>
+                        <button class="answer-btn" data-correct="false">24-26°C</button>
+                    </div>
+                    <div class="feedback" id="feedback-2"></div>
+                </div>
+
+                <!-- Vraag 3 -->
+                <div class="question-card" data-question="3">
+                    <h2 class="question-number">Vraag 3</h2>
+                    <p class="question-text">Waarom is het blauw licht van schermen slecht voor je slaap?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">Het maakt je ogen moe</button>
+                        <button class="answer-btn" data-correct="true">Het verstoort de aanmaak van melatonine</button>
+                        <button class="answer-btn" data-correct="false">Het verhoogt je lichaamstemperatuur</button>
+                        <button class="answer-btn" data-correct="false">Het veroorzaakt hoofdpijn</button>
+                    </div>
+                    <div class="feedback" id="feedback-3"></div>
+                </div>
+
+                <!-- Vraag 4 -->
+                <div class="question-card" data-question="4">
+                    <h2 class="question-number">Vraag 4</h2>
+                    <p class="question-text">Tot welk tijdstip kun je het beste geen koffie meer drinken?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">12:00 uur</button>
+                        <button class="answer-btn" data-correct="true">14:00 uur</button>
+                        <button class="answer-btn" data-correct="false">18:00 uur</button>
+                        <button class="answer-btn" data-correct="false">20:00 uur</button>
+                    </div>
+                    <div class="feedback" id="feedback-4"></div>
+                </div>
+
+                <!-- Vraag 5 -->
+                <div class="question-card" data-question="5">
+                    <h2 class="question-number">Vraag 5</h2>
+                    <p class="question-text">Wat gebeurt er NIET tijdens de slaap?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">Je spieren herstellen zich</button>
+                        <button class="answer-btn" data-correct="false">Herinneringen worden verwerkt</button>
+                        <button class="answer-btn" data-correct="true">Je verbrandt de meeste calorieën</button>
+                        <button class="answer-btn" data-correct="false">Je immuunsysteem wordt versterkt</button>
+                    </div>
+                    <div class="feedback" id="feedback-5"></div>
+                </div>
+
+                <!-- Vraag 6 -->
+                <div class="question-card" data-question="6">
+                    <h2 class="question-number">Vraag 6</h2>
+                    <p class="question-text">Wat is een gevolg van slaaptekort?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">Betere concentratie</button>
+                        <button class="answer-btn" data-correct="false">Sterker immuunsysteem</button>
+                        <button class="answer-btn" data-correct="true">Verhoogd risico op obesitas en diabetes</button>
+                        <button class="answer-btn" data-correct="false">Stabielere stemming</button>
+                    </div>
+                    <div class="feedback" id="feedback-6"></div>
+                </div>
+
+                <!-- Vraag 7 -->
+                <div class="question-card" data-question="7">
+                    <h2 class="question-number">Vraag 7</h2>
+                    <p class="question-text">In welke slaapfase droom je het meest?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">Lichte slaap</button>
+                        <button class="answer-btn" data-correct="false">Diepe slaap</button>
+                        <button class="answer-btn" data-correct="true">REM-slaap</button>
+                        <button class="answer-btn" data-correct="false">Inslaapfase</button>
+                    </div>
+                    <div class="feedback" id="feedback-7"></div>
+                </div>
+
+                <!-- Vraag 8 -->
+                <div class="question-card" data-question="8">
+                    <h2 class="question-number">Vraag 8</h2>
+                    <p class="question-text">Hoeveel uur slaap hebben tieners (14-17 jaar) nodig?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">5-6 uur</button>
+                        <button class="answer-btn" data-correct="false">6-7 uur</button>
+                        <button class="answer-btn" data-correct="true">8-10 uur</button>
+                        <button class="answer-btn" data-correct="false">11-13 uur</button>
+                    </div>
+                    <div class="feedback" id="feedback-8"></div>
+                </div>
+
+                <!-- Vraag 9 -->
+                <div class="question-card" data-question="9">
+                    <h2 class="question-number">Vraag 9</h2>
+                    <p class="question-text">Hoe lang duurt de ideale powernap?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">5 minuten</button>
+                        <button class="answer-btn" data-correct="true">10-20 minuten</button>
+                        <button class="answer-btn" data-correct="false">45 minuten</button>
+                        <button class="answer-btn" data-correct="false">1 uur</button>
+                    </div>
+                    <div class="feedback" id="feedback-9"></div>
+                </div>
+
+                <!-- Vraag 10 -->
+                <div class="question-card" data-question="10">
+                    <h2 class="question-number">Vraag 10</h2>
+                    <p class="question-text">Wanneer begint je lichaam melatonine aan te maken?</p>
+                    <div class="answers">
+                        <button class="answer-btn" data-correct="false">Direct als je in bed ligt</button>
+                        <button class="answer-btn" data-correct="true">Ongeveer 2 uur voor je normale bedtijd</button>
+                        <button class="answer-btn" data-correct="false">Alleen als je slaapt</button>
+                        <button class="answer-btn" data-correct="false">'s Ochtends vroeg</button>
+                    </div>
+                    <div class="feedback" id="feedback-10"></div>
+                </div>
+
+                <!-- Resultaat -->
+                <div class="result-card" id="result-card">
+                    <h2>Quiz Voltooid!</h2>
+                    <div class="score-circle" id="score-circle">
+                        <span class="score-number" id="score-number">0</span>
+                        <span class="score-total">/ 10</span>
+                    </div>
+                    <p class="result-message" id="result-message"></p>
+                    <div class="result-buttons">
+                        <button class="quiz-btn restart-btn" id="restart-btn">Opnieuw proberen</button>
+                        <a href="slaap_info.html" class="quiz-btn info-btn">Terug naar informatie</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-navigation" id="quiz-navigation">
+                <button class="quiz-btn next-btn" id="next-btn" disabled>Volgende vraag</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- einde main content -->
+
+    <footer>
+        <div class="footer-content">
+            <p>2026 Gemeente Otterdam - Leefstijl & Gezondheid</p>
+            <a href="slaap_info.html">Terug naar Slaap & Rust</a>
+        </div>
+    </footer>
+
+    <script src="javascript/slaap_quiz.js"></script>
 </body>
 </html>
