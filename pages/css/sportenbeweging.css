@@ -9,6 +9,7 @@ flex-direction: column;
 font-family: Arial;
 margin: 0;
 padding: 0;
+padding-top: 70px;
 background-image: url(../media/aboutusbg.jpg);
 background-size: cover;
 background-repeat: no-repeat;
@@ -16,14 +17,7 @@ height: 100%;
 width: 100%;
 }
  
-header{
-background-color: black;
-width: 100%;
-height: 6vh;
-display: flex;
-align-items: center;
-justify-content: space-between
-}
+/* Header styling komt uit index.css */
     
 .holder{
 display: flex;
@@ -35,35 +29,11 @@ height: 70%;
 gap: 5%;
 }
 
-.homepage-logo{
-width: 85px;
-height: 75px;
-}
-
-.navbar{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px;
-font-size: 20px;
-margin-right: 25px;
-}
-    
-.navbar a{
-color: white;
-text-decoration: none;
-transition: 0.6s ease;
-}
-    
-.navbar a:hover{
-color: rgb(42, 172, 42);
-}
-
 .title{
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 100px;
+margin-top: 30px;
 font-size: 40px;
 font-weight: bold;
 height: fit-content;

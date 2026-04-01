@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
+    <title>Contact | Gemeente Otterdam</title>
     <link rel="stylesheet" href="../index/css/index.css">
-    <script src="../index/javascript/index.js"></script>
+    <script src="../index/javascript/index.js" defer></script>
 </head>
 <body>
-    <div id="header">
-        <img id="logo" src="../index/media/homepage logo.svg">
-        <div id="contents">
-            <button type="button" onclick="window.location.href='../index.html'">Home</button>
-            <button type="button" onclick="window.location.href='Quizen.html'">Quizzen</button>
-            <button type="button" onclick="window.location.href='aboutus.html'">About Us</button>
-            <button type="button" onclick="window.location.href='Contact.html'">Contact</button>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h2>Gemeente Otterdam</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#quizzen">Quizzen</a>
+                <a href="aboutus.html">Over Ons</a>
+                <a href="Contact.html" class="active">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </div>
+    </header>
 </body>
 </html>
